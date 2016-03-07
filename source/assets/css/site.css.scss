@@ -1,0 +1,71 @@
+@charset "utf-8";
+@import "normalize";
+@import "flex";
+
+$blue: #0B3B47;
+$blue-contrast: #53767F;
+$blue-dark: #051D2C;
+$white: #fff;
+$yellow: #FFE74C;
+$yellow-dark: #5B4E0A;
+$red: #FF5964;
+$red-dark:#5F121B;
+$green: #21FB76;
+$green-dark: #107136;
+
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: $blue;
+}
+
+a { text-decoration: none }
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+main {
+    margin-top: 10rem;
+}
+.nav-container {
+  margin: 2em 0 5em 0;
+}
+.box {
+    padding: 2em 0;
+}
+.box.header {
+  color: $blue-contrast;
+}
+.box.news {
+  background: $white;
+  color: $blue-dark;
+  border-radius: 6px 6px 0 0;
+  @media (max-width: 768px) {
+    border-radius: 0;
+  }
+}
+
+.box.apps {
+  background: $yellow;
+  color: $yellow-dark;
+}
+
+.box.music {
+  background: $red;
+  color: $red-dark;
+}
+
+.box.phone {
+  background: $green;
+  color: $green-dark;
+  border-radius: 0 0 6px 6px;
+  @media (max-width: 768px) {
+    border-radius: 0;
+  }
+}
