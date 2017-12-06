@@ -195,6 +195,28 @@
 
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script>
+    $(document).ready(function () {
+
+    $('a[data-id]').click(function (event) {
+      $('*[data-parent="' + $(this).data('id') + '"]').addClass('show');
+      $(this).removeAttr('data-id');
+      $(this).removeAttr('tabindex');
+      if ($($(this)).data('replace') != undefined) {
+        $(this).addClass('hide');
+      }
+      ga('send', 'event', 'text', $(this).text());
+    });
+
+    $('a[href]').click(function (event) {
+      ga('send', 'event', 'link', $(this).text());
+    });
+
+    $('a[data-id]').keypress(function (event) {
+      if (event.keyCode == 13) {
+        $(this).trigger('click');
+      }
+    });
+    
     var clicky_site_ids = clicky_site_ids || [];
     clicky_site_ids.push(100858933);
     (function () {
@@ -204,6 +226,8 @@
       s.src = 'https://static.getclicky.com/js';
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
     })();
+      
+      });
   </script>
 
 </body>
