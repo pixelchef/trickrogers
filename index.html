@@ -158,77 +158,26 @@
 </head>
 <body>
   <div class="container">
-    <p>Hello.</p>
-    <p>My name is
-      <a data-id="1" tabindex="0">Patrick</a>
-      <span data-parent="1"> Rogers</span>.</p>
-
+    <p>Hello! My name is Patrick Rogers.</p>
     <p>
-      I
-      <a data-id="2" data-replace tabindex="0">create</a>
-      <a data-id="6" data-parent="2">design, develop, and test</a>
-      <a data-id="3" data-replace tabindex="0">software products</a>
-      <span data-parent="3">mobile apps, quadcopters, and web & mobile applications</span>.
-      <span data-parent="6">From product management to <a href="https://www.behance.net/patrickrogers">user experience design</a>, to <a href="http://codepen.io/pixelchef/">full stack development</a>.</span>
+      I have expereince <a href="behance.net/patrickrogers">designing products</a>, <a href="https://github.com/pixelchef">full-stack development</a>, and <a href="https://cloud.realm.io">managing software product development</a>. 
     </p>
+    <p>I have a few side projects including; <a href="https://www.behance.net/gallery/32104299/Plot">Plot.io (WebRTC feedback collection)</a>, <a href="https://www.behance.net/gallery/60450791/Loqwat">Loqwat (Social App)</a>, <a href="http://codepen.io/pixelchef/">front end coding</a>, <a href="https://soundcloud.com/rogus">music composition</a>, and <a href="https://instagram.com/artonatrain">abstract art</a>.</span></p>
 
-    <p data-parent="3">I co-founded or helped at
-      <a target="_blank" href="http://realm.io" class="uruguaypasss">Realm</a> (2017)
-      <a target="_blank" href="http://camio.com" class="uruguay360">Camio</a> (2013)
-      <a target="_blank" href="http://ekodevices.com" class="propit">Eko Devices</a> (2012) and 
-      <a target="_blank" href="https://www.linkedin.com/in/patrickjrogers/" class="propit">OneCal (2010)</a>.
-
-    <p>
+    <p>I co-founded or helped at
+      <a target="_blank" href="http://realm.io">Realm</a> (2017)
+      <a target="_blank" href="http://camio.com">Camio</a> (2013)
+      <a target="_blank" href="http://ekodevices.com">Eko Devices</a> (2012) and 
+      <a target="_blank" href="https://www.linkedin.com/in/patrickjrogers/">OneCal (2010)</a>.</p>
+<p>
       <span data-parent="4">I’m always intersted in new products and ideas.</span>
-      <a data-id="4" tabindex="0">You should</a>
-      <a data-id="5" tabindex="0">say hello</a>.
-    </p>
-
-    <p data-parent="5">
       <a target="_blank" href="mailto:patrickrogersjohn@gmail.com">Email me</a>, or find me on
-      <a target="_blank" href="https://twitter.com/MrPatrickRogers" class="twitter">Twitter</a>,
+      <a target="_blank" href="https://twitter.com/MrPatrickRogers">Twitter</a>,
       <a target="_blank" href="https://github.com/pixelchef">GitHub</a> or
-      <a target="_blank" href="https://www.linkedin.com/in/patrickjrogers" class="linkedin">LinkedIn</a>.
-    </p>
+      <a target="_blank" href="https://www.linkedin.com/in/patrickjrogers" class="linkedin">LinkedIn</a>.</p>
+  
 
   </div>
-
-<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script>
-    $(document).ready(function () {
-
-    $('a[data-id]').click(function (event) {
-      $('*[data-parent="' + $(this).data('id') + '"]').addClass('show');
-      $(this).removeAttr('data-id');
-      $(this).removeAttr('tabindex');
-      if ($($(this)).data('replace') != undefined) {
-        $(this).addClass('hide');
-      }
-      ga('send', 'event', 'text', $(this).text());
-    });
-
-    $('a[href]').click(function (event) {
-      ga('send', 'event', 'link', $(this).text());
-    });
-
-    $('a[data-id]').keypress(function (event) {
-      if (event.keyCode == 13) {
-        $(this).trigger('click');
-      }
-    });
-    
-    var clicky_site_ids = clicky_site_ids || [];
-    clicky_site_ids.push(100858933);
-    (function () {
-      var s = document.createElement('script');
-      s.type = 'text/javascript';
-      s.async = true;
-      s.src = 'https://static.getclicky.com/js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
-    })();
-      
-      });
-  </script>
 
 </body>
 
