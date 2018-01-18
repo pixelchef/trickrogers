@@ -1,2 +1,5 @@
-# trickrogers
-trickrogers.com
+![](https://i.imgur.com/vuxjkJC.png)
+
+# patrick.pm
+
+A personal website
