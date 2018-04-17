@@ -1,0 +1,3 @@
+# Redirect domain aliases to primary domain
+https://patrick.pm/* https://patrickrogers.com/:splat 301!
+https://www.patrick.pm/* https://patrickrogers.com/:splat 301!
