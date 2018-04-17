@@ -52,10 +52,32 @@
     ::-moz-selection {
       background: #f0f0f0;
     }
-
+    .first-line {
+      list-style: none;
+      display: -webkit-flex;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -moz-box-orient: horizontal;
+      -ms-box-orient: horizontal;
+      box-orient: horizontal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+    }
+    .wave {
+      width: 40px;
+      height: 40px;
+      display:none;
+    }
     p {
       margin: 0;
       margin-bottom: 1.5em;
+    }
+    h2 {
+      margin-top: 0;
     }
 
     a[href] {
@@ -86,11 +108,11 @@
       margin: 0 auto;
       max-width: 33em;
       overflow: hidden;
-      padding: 60px 24px;
+      padding: 0 25px;
     }
 
     .avatar {
-      border-radius: 10rem;
+      border-radius: 1rem;
       max-width: 12rem;
       display:none;
     }
@@ -99,8 +121,15 @@
       .container {
         padding: 6rem 0;
       }
-      .avatar {
+      .avatar, .wave {
         display:block;
+      }
+      .first-line h2 {
+        margin-top: -15px;
+        margin-left: 10px;
+      }
+      .container {
+        padding: 60px 25px;
       }
     }
 
@@ -109,8 +138,11 @@
 
 <body>
   <div class="container">
-    <img class="avatar" src="https://avatars0.githubusercontent.com/u/4326753">
-    <h2>Hello! My name is Patrick Rogers.</h2>
+    <img class="avatar" src="https://avatars0.githubusercontent.com/u/4326753"/></br>
+    <div class="first-line">
+      <img class="wave" src="assets/wave.png" />
+      <h2>Hello! My name is Patrick Rogers.</h2>
+    </div>
     <p>
       I have experience in
       <a href="https://behance.net/patrickrogers">product design</a>,
